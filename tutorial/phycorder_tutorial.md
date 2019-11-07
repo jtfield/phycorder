@@ -167,9 +167,11 @@ Both of these files contain the homologous sequence for a number of taxa. The fi
 $ head -2 /testdata/single_locus_align_dir/single_locus_1_.fasta
 $ head -2 /testdata/single_locus_align_dir/single_locus_2_.fasta
 ```
-You'll see that one file's sequence is indeed very large while the second file's sequence is only a few letters. This is deliberate to display a function of Phycorder when selecting which data to input. Phycorder should only be used with loci over 1,000 bases long. If taking these files are input, the smaller sequence file will be identified and removed before construction of a concatenated sequence. Lets run a new analyses.
+You'll see that one file's sequence is indeed very large while the second file's sequence is only a few letters. This is deliberate to display a function of Phycorder when selecting which data to input. Phycorder should only be used with loci over 1,000 bases long. If taking these files are input, the smaller sequence file will be identified and removed before construction of a concatenated sequence.
 
-First, remove the folder with the output we just generated
+---
+
+Lets run a new analysis. First, remove the folder with the output we just generated
 
 ```bash
 $ rm -r phycorder_run
